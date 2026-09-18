@@ -26,7 +26,7 @@ Année: 2024-2025
 Exécutez le programme en utilisant la commande suivante :
 
    ```
-   $ ./a.out
+   $ 
    ```
 
    Vous devriez voir le message "Bonjour le Monde!" affiché à l'écran.

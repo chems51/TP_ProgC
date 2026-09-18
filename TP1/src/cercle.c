@@ -1,19 +1,19 @@
 #include <stdio.h>
-#include <math.h> // Remplacement de string.h par math.h pour utiliser M_PI
+#include <math.h>
 
-int main() {
-    float rayon = 6.0; // Utilisation d'un float comme demandé
-    
-    // Calcul de l'aire (pi * r^2)
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
+
+int main(void) {
+    float rayon = 6.0f;
+
     float aire = M_PI * rayon * rayon;
-    
-    // Calcul du périmètre (2 * pi * r)
-    float perimetre = 2 * M_PI * rayon;
+    float perimetre = 2.0f * M_PI * rayon;
 
-    // Affichage des résultats
     printf("Pour un rayon de %.2f :\n", rayon);
-    printf("L'aire du cercle = %f\n", aire);
-    printf("Le périmètre du cercle = %f\n", perimetre);
+    printf("L'aire du cercle = %.2f\n", aire);
+    printf("Le périmètre du cercle = %.2f\n", perimetre);
 
     return 0;
 }
